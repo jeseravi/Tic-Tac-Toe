@@ -80,6 +80,90 @@ function checkWinner(){
                 player.gameStatus="over";
             }
         }
+
+        if(document.getElementById("twoOne").innerHTML==document.getElementById("twoTwo").innerHTML && document.getElementById("twoTwo").innerHTML==
+        document.getElementById("twoThree").innerHTML) {
+            if(document.getElementById("twoOne").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("twoOne").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+
+        if(document.getElementById("threeOne").innerHTML==document.getElementById("threeTwo").innerHTML && document.getElementById("threeTwo").innerHTML==
+        document.getElementById("threeThree").innerHTML) {
+            if(document.getElementById("threeOne").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("threeOne").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+
+        if(document.getElementById("oneThree").innerHTML==document.getElementById("twoThree").innerHTML && document.getElementById("oneThree").innerHTML==
+        document.getElementById("threeThree").innerHTML) {
+            if(document.getElementById("oneThree").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("oneThree").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+
+        if(document.getElementById("oneTwo").innerHTML==document.getElementById("twoTwo").innerHTML && document.getElementById("threeTwo").innerHTML==
+        document.getElementById("oneTwo").innerHTML) {
+            if(document.getElementById("oneTwo").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("oneTwo").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+
+        if(document.getElementById("oneOne").innerHTML==document.getElementById("twoOne").innerHTML && document.getElementById("threeOne").innerHTML==
+        document.getElementById("oneOne").innerHTML) {
+            if(document.getElementById("oneOne").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("oneOne").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+        
+        if(document.getElementById("oneOne").innerHTML==document.getElementById("twoTwo").innerHTML && document.getElementById("twoTwo").innerHTML==
+        document.getElementById("threeThree").innerHTML) {
+            if(document.getElementById("oneOne").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("oneOne").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
+        
+        if(document.getElementById("oneThree").innerHTML==document.getElementById("twoTwo").innerHTML && document.getElementById("threeOne").innerHTML==
+        document.getElementById("oneThree").innerHTML) {
+            if(document.getElementById("oneThree").innerHTML=="X"){
+                generateElement("div","winnerMessage","Player 1 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+            if(document.getElementById("oneThree").innerHTML=="O"){
+                generateElement("div","winnerMessage","Player 2 Won!","instructions","winnerMessage","")
+                player.gameStatus="over";
+            }
+        }
         
 
 }
